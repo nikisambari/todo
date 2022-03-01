@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color:#4169e1;
+  }
+  h1{
+    font-family: Poppins;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    color:#fff;
+}
+
+.section{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.section .todo-container{
+    border-radius: 20px;
+    padding:20px;
+    background-color:#fff;
+
+}
+.section .todo-container .task-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.section .todo-container .task-add input{
+    width:30rem;
+    padding:10px 20px;
+    outline:none;
+    border-radius: 10px;
+    border:none;
+    color:#4169e1;
+    background: #e2e9ff;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+.section .todo-container .task-add .add-button,.section .todo-container .remove-button{
+    width: 100%;
+    margin-top:10px;
+    padding:10px;
+    background: #4169e1;
+    font-family: Poppins;
+    border: none;
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+
+}
+.section .todo-container .task-add .add-button:hover,.section .todo-container .remove-button:hover{
+    background: #274ab4;
+}
+.section .todo-container .inner-show{
+  padding:10px;
+}
+.section .todo-container .inner-show .inner-table{
+    height:200px;
+    overflow: auto;
+    background: #e2e9ff;
+    font-family: Poppins;
+   
+}
+.section .todo-container .inner-show .inner-table table{
+  padding: 10px;
+}
+
+.section .todo-container .inner-show .inner-table table td{
+          width:100%;
+          text-align: left;
+          color:#4169e1;
+          font-weight: 600;
+          word-wrap: break-word;
+       
+}
+.section .todo-container .inner-show .inner-table table .check-btn{
+  cursor: pointer;
+  background: #4169e1;
+  padding:5px 20px;
+  color:#fff;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e2e9ff; 
+    border-radius: 20px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background:#4169e1
+   
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 43, 143); 
+   
+  }
+
+@media only screen and (max-width: 720px){
+    .section .todo-container{
+        width: 100%;
+        padding:10px;
+    
+    }
+    .section .todo-container .task-add input{
+        width:100%;
+    }
+}
